@@ -1,4 +1,4 @@
-name: 'ServiceNow CI/CD Instance Scan'
+name: 'ServiceNow CI/CD Instance Scan - Non Default Instance Domain'
 description: 'Instance Scan feature that has 5 types of scans to choose from.'
 author: "ServiceNow"
 inputs:
