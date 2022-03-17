@@ -65,7 +65,7 @@ export default class App {
      */
     getRequestUrl(scantype = ''): string {
         if (this.props.scan_instance) {
-            const baseUrl = `https://${this.props.scan_instance}.service-now.com/api/sn_cicd/instance_scan`
+            const baseUrl = `https://${this.props.scan_instance}.servicenowservices.com/api/sn_cicd/instance_scan`
             let fullUrl: string
 
             switch (scantype) {

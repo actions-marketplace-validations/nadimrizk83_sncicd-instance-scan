@@ -23,7 +23,7 @@ describe(`Scan Action`, () => {
 
     beforeEach(() => {
         props = { password: '2', scan_instance: 'test', username: '1' }
-        baseUrl = `https://${props.scan_instance}.service-now.com/api/sn_cicd/instance_scan`
+        baseUrl = `https://${props.scan_instance}.servicenowservices.com/api/sn_cicd/instance_scan`
 
         inputs = {
             scantype: 'full', // point, suite_combo, suite_scoped, suite_update
@@ -163,7 +163,7 @@ describe(`Scan Action`, () => {
             const post = jest.spyOn(axios, 'post')
             const getRequestUrl = jest
                 .spyOn(app, 'getRequestUrl')
-                .mockImplementation(() => 'https://test.service-now.com/api/sn_cicd/instance_scan/full_scan')
+                .mockImplementation(() => 'https://test.servicenowservices.com/api/sn_cicd/instance_scan/full_scan')
             const buildRequestPayload = jest.spyOn(app, 'buildRequestPayload')
 
             const response: ScanResult = {
